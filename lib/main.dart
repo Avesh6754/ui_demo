@@ -1,6 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:ui_demo/Emoji.dart';
+import 'package:ui_demo/Mashal.dart';
+import 'package:ui_demo/MissionRnw.dart';
+import 'package:ui_demo/Mixup.dart';
+import 'package:ui_demo/Myapp.dart';
+import 'package:ui_demo/Newgradient.dart';
+import 'package:ui_demo/OpernDoor.dart';
+import 'package:ui_demo/Shadowbutton.dart';
+import 'package:ui_demo/chess.dart';
+import 'package:ui_demo/flage.dart';
+import 'package:ui_demo/lettercover.dart';
+import 'package:ui_demo/utils/Cube3d.dart';
+import 'package:ui_demo/watch.dart';
 
-import 'Button.dart';
+import 'Counter.dart';
+import 'Darkbutton.dart';
+import 'Gradient.dart';
+import 'Launch.dart';
 
 void main()
 {
@@ -13,22 +29,29 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Homescreen(),
+      routes: {
+        '/':(context)=>Myapp(),
+        '/Mission':(context)=>Missionrnw(),
+        '/Mixup':(context)=>Mixup(),
+        '/Mashal':(context)=>Mashal(),
+        '/Letter':(context)=>Lettercover(),
+        '/Cube':(context)=>Cube(),
+        '/Open':(context)=>Operndoor(),
+        '/Emoji':(context)=>Emoji(),
+        '/Gradient':(context)=>Gradiet(),
+        '/Launch':(context)=>Launch(),
+        '/Dark':(context)=>Darkbutton(),
+        '/Shadow':(context)=>Shadowbutton(),
+        '/Inline':(context)=>Inlinegredient(),
+        '/Flag':(context)=>Flage(),
+        '/Watch':(context)=>Watch(),
+        '/Button':(context)=>Button(),
+        '/Chess':(context)=>Chess(),
+
+
+      },
     );
   }
 }
-class Homescreen extends StatefulWidget {
-  const Homescreen({super.key});
-
-  @override
-  State<Homescreen> createState() => _State();
-}
-
-class _State extends State<Homescreen> {
-  @override
-  Widget build(BuildContext context) {
-    return Button();
-  }
-}
-
+//
 
