@@ -18,6 +18,7 @@ class _MyappState extends State<Myapp> {
         title: const Text(
           'My App',
           style: TextStyle(color: Colors.white),
+
         ),
         centerTitle: true,
         leading: const Icon(

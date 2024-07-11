@@ -21,6 +21,7 @@ backgroundColor: Colors.white,
         centerTitle: true,
         leading: InkWell(
           onTap: (){
+
             Navigator.of(context).pop();
           },
           child: const Icon(

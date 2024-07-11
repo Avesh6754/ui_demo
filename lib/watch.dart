@@ -53,6 +53,7 @@ class _WatchState extends State<Watch> {
                   ]
 
               ),),
+
             alignment: Alignment.center,
             child: Container(
               height:65,

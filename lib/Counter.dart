@@ -36,6 +36,7 @@ class _ButtonState extends State<Button> {
             "Click on bottom add to increase value ",
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
           ),
+
           Text(
             "$count",
             style: TextStyle(fontSize: 50),

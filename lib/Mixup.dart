@@ -30,6 +30,7 @@ class _MixupState extends State<Mixup> {
             color: Colors.white,
           ),
         ),
+
         actions:const  [
           Padding(
             padding: EdgeInsets.only(right: 10),

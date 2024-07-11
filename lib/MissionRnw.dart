@@ -15,6 +15,7 @@ class _MissionrnwState extends State<Missionrnw> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: firstcolor,
+
         title:const Text(
           'Mission of RNW',
           style: TextStyle(color: Colors.white),

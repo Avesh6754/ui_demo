@@ -37,6 +37,7 @@ class _ButtonState extends State<Chess> {
           decoration: BoxDecoration(
             border: Border.all(color: Colors.black,
             width: 1)
+
           ),
           child: Column(
             children: [

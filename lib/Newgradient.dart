@@ -12,6 +12,7 @@ class _InlinegredientState extends State<Inlinegredient> {
     return Scaffold(
       backgroundColor: const Color(0xff48416A),
       appBar: AppBar(
+
         title:const  Text('Gredient Button ',style: TextStyle(color: Colors.white),),
         centerTitle: true,
         backgroundColor: const Color(0xff48416A),

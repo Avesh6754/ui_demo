@@ -37,6 +37,7 @@ class _CubeState extends State<Cube> {
               Icons.search,
               color: Colors.white,
             ),
+
           )
         ],
       ),

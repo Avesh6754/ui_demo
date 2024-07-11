@@ -11,6 +11,7 @@ class _DarkbuttonState extends State<Darkbutton> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+
       appBar: AppBar(
         title: Text('A Shadow Button ',style: TextStyle(color: Colors.white),),
         centerTitle: true,

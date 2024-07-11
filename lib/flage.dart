@@ -16,6 +16,7 @@ class _FlageState extends State<Flage> {
         title:const  Text('An Indian Flag',style: TextStyle(color: Colors.white),),
         centerTitle: true,
         backgroundColor: Colors.blue,
+
         leading: InkWell(
           onTap: () {
             Navigator.of(context).pop();

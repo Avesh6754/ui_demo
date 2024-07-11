@@ -17,6 +17,7 @@ class _LaunchState extends State<Launch> {
           'Launch Button',
           style: TextStyle(color: Colors.white),
         ),
+
         centerTitle: true,
         backgroundColor: Colors.green,
         leading: InkWell(
