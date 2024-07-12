@@ -13,10 +13,13 @@ import 'package:ui_demo/lettercover.dart';
 import 'package:ui_demo/utils/Cube3d.dart';
 import 'package:ui_demo/watch.dart';
 
+import 'Clac.dart';
 import 'Counter.dart';
 import 'Darkbutton.dart';
 import 'Gradient.dart';
+import 'Icon.dart';
 import 'Launch.dart';
+import 'Map.dart';
 
 void main()
 {
@@ -30,6 +33,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      initialRoute:'/Clac',
       routes: {
         '/':(context)=>Myapp(),
         '/Mission':(context)=>Missionrnw(),
@@ -48,6 +52,9 @@ class MyApp extends StatelessWidget {
         '/Watch':(context)=>Watch(),
         '/Button':(context)=>Button(),
         '/Chess':(context)=>Chess(),
+        '/Clac':(context)=>Clac(),
+        '/Map':(context)=>Mapdata(),
+        '/Icon':(context)=>Ioncdata(),
 
 
       },

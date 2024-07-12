@@ -31,41 +31,82 @@ class _ButtonState extends State<Chess> {
         ),
       ),
       body:Center(
-        child: Container(
-          height: 200,
-          width: 200,
-          decoration: BoxDecoration(
-            border: Border.all(color: Colors.black,
-            width: 1)
+        child: GestureDetector(
+          onTap: () {
+            Navigator.of(context).pushNamed('/Clac');
+          },
+          child: Container(
+            height: 242,
+            width: 242,
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.black,
+              width: 1)
 
-          ),
-          child: Column(
-            children: [
-              Colum1(),
-            ],
+            ),
+            child: Column(
+              children: [
+                Colum2(),
+                Colum1(),
+                Colum2(),
+                Colum1(),
+                Colum2(),
+                Colum1(),
+                Colum2(),
+                Colum1(),
+              ],
+            ),
           ),
         ),
-
       )
     );
   }
   Widget Colum1(){
-   return Row1();
+    return Row(
+      children: [
+        Row1(),
+        Row2(),
+        Row1(),
+        Row2(),
+        Row1(),
+        Row2(),
+        Row1(),
+        Row2(),
+      ],
+    );
+
+  }
+  Widget Colum2(){
+    return Row(
+      children: [
+        Row2(),
+        Row1(),
+        Row2(),
+        Row1(),
+        Row2(),
+        Row1(),
+        Row2(),
+        Row1(),
+
+      ],
+    );
 
   }
 
   Container Row2() {
     return Container(
-                height: 20,
-                width: 20,
-                color: Color(0xffF1F1F1),
+                height: 30,
+                width: 30,
+                decoration: BoxDecoration(
+                  color: Color(0xffF1F1F1),
+                  border: Border.all(color: Colors.black38,width: 1)
+                ),
               );
   }
 
   Container Row1() {
     return Container(
-                height: 20,
-                width: 20,
+                height: 30,
+                width: 30,
                 color: Color(0xff7D93C0),
               );
   }
