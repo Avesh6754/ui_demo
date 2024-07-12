@@ -40,11 +40,34 @@ class _IoncdataState extends State<Ioncdata> {
              child: Row(
                children: [
 
-                 ...List.generate(teat.length, (index)=>RowContainer(id: teat[index]))
+                 ...List.generate(5, (index)=>RowContainer(id: teat[index]))
 
                ],
              ),
-           )
+
+           ),
+            SizedBox(height:5 ,),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+
+                  ...List.generate(4, (index)=>RowContainer(id: teat[5+index]))
+
+                ],
+              ),
+            ),
+            SizedBox(height:5 ,),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+
+                  ...List.generate(5, (index)=>RowContainer(id: teat[9+index]))
+
+                ],
+              ),
+            ),
           ],
         ),
       ),
@@ -59,7 +82,7 @@ class _IoncdataState extends State<Ioncdata> {
 
   Container RowContainer({required var id}) {
     return Container(
-                    margin: EdgeInsets.only(left:5),
+                    margin: EdgeInsets.only(left:10),
                     height: 100,
                     width: 100,
                     decoration: BoxDecoration(
@@ -67,8 +90,8 @@ class _IoncdataState extends State<Ioncdata> {
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black12,
-                          spreadRadius: 3,
-                          blurRadius: 3
+                          spreadRadius: 2,
+                          blurRadius: 5
                         )
                       ]
                     ),
