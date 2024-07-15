@@ -4,7 +4,7 @@ A new Flutter project.
 
 <h1 align="center">Task</h1>
 <p>
-  <img src="https://github.com/user-attachments/assets/edf66cfe-871f-4d16-93fe-f47762941182" width="22%" Height="35%">
+ 
   <img src="https://github.com/user-attachments/assets/d576943f-4957-44aa-ae16-866b83b0407a" width="22%" Height="35%">
   <img src="https://github.com/user-attachments/assets/18d48b46-862e-453b-844c-8edf06073af3" width="22%" Height="35%">
    <img src="https://github.com/user-attachments/assets/2a745717-65e3-4d36-8d16-a28b87b902d9" width="22%" Height="35%">
