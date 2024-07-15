@@ -14,7 +14,7 @@ class _ButtonState extends State<Chess> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text(
+        title: const Text(
           'Chess',
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
@@ -24,7 +24,7 @@ class _ButtonState extends State<Chess> {
           onTap: (){
             Navigator.of(context).pop();
           },
-          child: Icon(
+          child: const Icon(
             Icons.arrow_back,
             color: Colors.white,
           ),
@@ -97,7 +97,7 @@ class _ButtonState extends State<Chess> {
                 height: 30,
                 width: 30,
                 decoration: BoxDecoration(
-                  color: Color(0xffF1F1F1),
+                  color: const Color(0xffF1F1F1),
                   border: Border.all(color: Colors.black38,width: 1)
                 ),
               );
@@ -107,7 +107,7 @@ class _ButtonState extends State<Chess> {
     return Container(
                 height: 30,
                 width: 30,
-                color: Color(0xff7D93C0),
+                color: const Color(0xff7D93C0),
               );
   }
 }

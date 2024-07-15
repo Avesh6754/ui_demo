@@ -13,7 +13,7 @@ class _ButtonState extends State<Button> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.amber,
-        title: Text(
+        title: const Text(
           'Counter App',
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
@@ -23,7 +23,7 @@ class _ButtonState extends State<Button> {
           onTap: (){
             Navigator.of(context).pop();
           },
-          child: Icon(
+          child: const Icon(
             Icons.arrow_back,
             color: Colors.white,
           ),
@@ -32,14 +32,14 @@ class _ButtonState extends State<Button> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             "Click on bottom add to increase value ",
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
           ),
 
           Text(
             "$count",
-            style: TextStyle(fontSize: 50),
+            style: const TextStyle(fontSize: 50),
           ),
           GestureDetector(
             onTap: () {
@@ -50,7 +50,7 @@ class _ButtonState extends State<Button> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
                 Row(
@@ -61,14 +61,14 @@ class _ButtonState extends State<Button> {
                       width: 60,
                       decoration: BoxDecoration(
                           color: Colors.red.shade100,
-                          borderRadius: BorderRadius.all(Radius.circular(15)),
-                          boxShadow: [
+                          borderRadius: const BorderRadius.all(Radius.circular(15)),
+                          boxShadow: const [
                             BoxShadow(
                                 color: Colors.black26,
                                 spreadRadius: 0.4,
                                 blurRadius: 5)
                           ]),
-                      child: Icon(
+                      child: const Icon(
                         Icons.remove,
                       ),
                     ),
@@ -83,14 +83,14 @@ class _ButtonState extends State<Button> {
                         width: 60,
                         decoration: BoxDecoration(
                             color: Colors.red.shade100,
-                            borderRadius: BorderRadius.all(Radius.circular(15)),
-                            boxShadow: [
+                            borderRadius: const BorderRadius.all(Radius.circular(15)),
+                            boxShadow: const [
                               BoxShadow(
                                   color: Colors.black26,
                                   spreadRadius: 0.4,
                                   blurRadius: 5)
                             ]),
-                        child: Icon(
+                        child: const Icon(
                           Icons.restart_alt,
                         ),
                       ),
@@ -106,21 +106,21 @@ class _ButtonState extends State<Button> {
                         width: 60,
                         decoration: BoxDecoration(
                             color: Colors.red.shade100,
-                            borderRadius: BorderRadius.all(Radius.circular(15)),
-                            boxShadow: [
+                            borderRadius: const BorderRadius.all(Radius.circular(15)),
+                            boxShadow: const [
                               BoxShadow(
                                   color: Colors.black26,
                                   spreadRadius: 0.4,
                                   blurRadius: 5)
                             ]),
-                        child: Icon(
+                        child: const Icon(
                           Icons.add,
                         ),
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
                 GestureDetector(
@@ -133,13 +133,13 @@ class _ButtonState extends State<Button> {
                     decoration: BoxDecoration(
                         color: Colors.blue.shade100,
                         shape: BoxShape.circle,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                               color: Colors.black26,
                               spreadRadius: 0.4,
                               blurRadius: 5)
                         ]),
-                    child: Icon(
+                    child: const Icon(
                       Icons.navigate_next_outlined,
                     ),
                   ),

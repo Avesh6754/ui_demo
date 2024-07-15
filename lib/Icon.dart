@@ -12,18 +12,18 @@ class _IoncdataState extends State<Ioncdata> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffEEEEEE),
+      backgroundColor: const Color(0xffFEFEFE),
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Icons',
           style: TextStyle(color: Colors.black),
         ),
-        backgroundColor: Color(0xffFFFFFF),
+        backgroundColor: const Color(0xffFFFFFF),
         leading: InkWell(
             onTap: () {
               Navigator.of(context).pop();
             },
-            child: Icon(
+            child: const Icon(
               Icons.arrow_back,
               color: Colors.black,
             )),
@@ -34,7 +34,7 @@ class _IoncdataState extends State<Ioncdata> {
 
         child: Column(
           children: [
-            SizedBox(height:8,),
+            const SizedBox(height:8,),
            SingleChildScrollView(
              scrollDirection: Axis.horizontal,
              child: Row(
@@ -46,7 +46,7 @@ class _IoncdataState extends State<Ioncdata> {
              ),
 
            ),
-            SizedBox(height:5 ,),
+            const SizedBox(height:5 ,),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -57,13 +57,36 @@ class _IoncdataState extends State<Ioncdata> {
                 ],
               ),
             ),
-            SizedBox(height:5 ,),
+
+            const SizedBox(height:5 ,),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
 
-                  ...List.generate(5, (index)=>RowContainer(id: teat[9+index]))
+                  ...List.generate(3, (index)=>RowContainer(id: teat[9+index]))
+
+                ],
+              ),
+            ),
+            const SizedBox(height:5 ,),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+
+                  ...List.generate(5, (index)=>RowContainer(id: teat[12+index]))
+
+                ],
+              ),
+            ),
+            const SizedBox(height:5 ,),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+
+                  ...List.generate(3, (index)=>RowContainer(id: teat[15+index]))
 
                 ],
               ),
@@ -73,29 +96,23 @@ class _IoncdataState extends State<Ioncdata> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.of(context).pushNamed('/Icon');
+          Navigator.of(context).pushNamed('/dynamic');
         },
-        child: Icon(Icons.navigate_next_outlined),
+        child: const Icon(Icons.navigate_next_outlined),
       ),
     );
   }
 
   Container RowContainer({required var id}) {
     return Container(
-                    margin: EdgeInsets.only(left:10),
-                    height: 100,
-                    width: 100,
+                    margin: const EdgeInsets.fromLTRB(10, 5, 0, 0),
+                    height: 160,
+                    width: 160,
                     decoration: BoxDecoration(
-                      color: Color(0xffF5F5F5),borderRadius: BorderRadius.circular(10),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black12,
-                          spreadRadius: 2,
-                          blurRadius: 5
-                        )
-                      ]
+                      color: const Color(0xffF5F5F5),borderRadius: BorderRadius.circular(10)
+
                     ),
-      child: Icon(id,color: Colors.grey,),
+      child: Icon(id,color: Colors.grey,size: 35,),
                   );
   }
 }

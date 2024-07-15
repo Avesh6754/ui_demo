@@ -44,7 +44,7 @@ class _ShadowbuttonState extends State<Shadowbutton> {
             decoration: BoxDecoration(
                 color: Colors.black,
                 border: Border.all(color: Colors.red,width: 1),
-                borderRadius: BorderRadius.all(Radius.circular(20)),
+                borderRadius: const BorderRadius.all(Radius.circular(20)),
                 boxShadow:const [BoxShadow(
                   color: Colors.red,
                   offset: Offset(1,2),

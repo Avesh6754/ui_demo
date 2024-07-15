@@ -15,9 +15,9 @@ class _MapdataState extends State<Mapdata> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffEEEEEE),
+      backgroundColor: const Color(0xffEEEEEE),
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Map',
           style: TextStyle(color: Colors.white),
         ),
@@ -26,7 +26,7 @@ class _MapdataState extends State<Mapdata> {
             onTap: () {
               Navigator.of(context).pop();
             },
-            child: Icon(
+            child: const Icon(
               Icons.arrow_back,
               color: Colors.white,
             )),
@@ -45,7 +45,7 @@ class _MapdataState extends State<Mapdata> {
         onPressed: () {
           Navigator.of(context).pushNamed('/Icon');
         },
-        child: Icon(Icons.navigate_next_outlined),
+        child: const Icon(Icons.navigate_next_outlined),
       ),
     );
   }
@@ -53,18 +53,18 @@ class _MapdataState extends State<Mapdata> {
   Column Clounm({required String Name,required var id}) {
     return Column(
             children: [
-              SizedBox(height: 15,),
+              const SizedBox(height: 15,),
               Container(
                 height: 80,
                 width: double.infinity,
-                color: Color(0xffFFFFFF),
+                color: const Color(0xffFFFFFF),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
 
                     Padding(
                       padding: const EdgeInsets.only(left: 20),
-                      child: Text("$Name",style: TextStyle(fontSize: 25,),),
+                      child: Text("$Name",style: const TextStyle(fontSize: 25,),),
                     ),
 
                     Padding(

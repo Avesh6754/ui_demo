@@ -16,50 +16,50 @@ import 'package:ui_demo/watch.dart';
 import 'Clac.dart';
 import 'Counter.dart';
 import 'Darkbutton.dart';
+import 'Editor.dart';
 import 'Gradient.dart';
 import 'Icon.dart';
 import 'Launch.dart';
 import 'Map.dart';
+import 'dymainc.dart';
 
-void main()
-{
+void main() {
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute:'/Icon',
+      initialRoute: '/Editor',
       routes: {
-        '/':(context)=>Myapp(),
-        '/Mission':(context)=>Missionrnw(),
-        '/Mixup':(context)=>Mixup(),
-        '/Mashal':(context)=>Mashal(),
-        '/Letter':(context)=>Lettercover(),
-        '/Cube':(context)=>Cube(),
-        '/Open':(context)=>Operndoor(),
-        '/Emoji':(context)=>Emoji(),
-        '/Gradient':(context)=>Gradiet(),
-        '/Launch':(context)=>Launch(),
-        '/Dark':(context)=>Darkbutton(),
-        '/Shadow':(context)=>Shadowbutton(),
-        '/Inline':(context)=>Inlinegredient(),
-        '/Flag':(context)=>Flage(),
-        '/Watch':(context)=>Watch(),
-        '/Button':(context)=>Button(),
-        '/Chess':(context)=>Chess(),
-        '/Clac':(context)=>Clac(),
-        '/Map':(context)=>Mapdata(),
-        '/Icon':(context)=>Ioncdata(),
-
-
+        '/': (context) => Myapp(),
+        '/Mission': (context) => Missionrnw(),
+        '/Mixup': (context) => Mixup(),
+        '/Mashal': (context) => Mashal(),
+        '/Letter': (context) => Lettercover(),
+        '/Cube': (context) => Cube(),
+        '/Open': (context) => Operndoor(),
+        '/Emoji': (context) => Emoji(),
+        '/Gradient': (context) => Gradiet(),
+        '/Launch': (context) => Launch(),
+        '/Dark': (context) => Darkbutton(),
+        '/Shadow': (context) => Shadowbutton(),
+        '/Inline': (context) => Inlinegredient(),
+        '/Flag': (context) => Flage(),
+        '/Watch': (context) => Watch(),
+        '/Button': (context) => Button(),
+        '/Chess': (context) => Chess(),
+        '/Clac': (context) => Clac(),
+        '/Map': (context) => Mapdata(),
+        '/Icon': (context) => Ioncdata(),
+        '/dynamic': (context) => DynamicDart(),
+        '/Editor': (context) => Editor(),
       },
     );
   }
 }
 //
-

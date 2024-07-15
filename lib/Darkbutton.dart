@@ -13,7 +13,7 @@ class _DarkbuttonState extends State<Darkbutton> {
       backgroundColor: Colors.white,
 
       appBar: AppBar(
-        title: Text('A Shadow Button ',style: TextStyle(color: Colors.white),),
+        title: const Text('A Shadow Button ',style: TextStyle(color: Colors.white),),
         centerTitle: true,
         backgroundColor: Color(0xff009688),
         leading: InkWell(
@@ -44,7 +44,7 @@ class _DarkbuttonState extends State<Darkbutton> {
             decoration: BoxDecoration(
                 color: Colors.white,
                 border: Border.all(color: Color(0xff009688),width: 1),
-                borderRadius: BorderRadius.all(Radius.circular(20)),
+                borderRadius: const BorderRadius.all(Radius.circular(20)),
                 boxShadow:const [BoxShadow(
                   color: Color(0xff009688),
                   offset: Offset(1,2),

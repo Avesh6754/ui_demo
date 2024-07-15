@@ -12,16 +12,16 @@ class _ClacState extends State<Clac> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Clac',
           style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Color(0xff54759E),
+        backgroundColor: const Color(0xff54759E),
         leading: InkWell(
             onTap: () {
               Navigator.of(context).pop();
             },
-            child: Icon(
+            child: const Icon(
               Icons.arrow_back,
               color: Colors.white,
             )),
@@ -31,16 +31,16 @@ class _ClacState extends State<Clac> {
       ),
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 150,
           ),
           Align(
               alignment: Alignment.center,
               child: Text(
                 "$count",
-                style: TextStyle(fontSize: 60, color: Colors.grey),
+                style: const TextStyle(fontSize: 60, color: Colors.grey),
               )),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           Row(
@@ -63,7 +63,7 @@ class _ClacState extends State<Clac> {
                   child: Cotainersdat(name: '+2'))
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Row(
@@ -86,7 +86,7 @@ class _ClacState extends State<Clac> {
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           GestureDetector(
@@ -103,7 +103,7 @@ class _ClacState extends State<Clac> {
         onPressed: () {
           Navigator.of(context).pushNamed('/Map');
         },
-        child: Icon(Icons.navigate_next_outlined),
+        child: const Icon(Icons.navigate_next_outlined),
       ),
     );
   }
@@ -113,13 +113,13 @@ class _ClacState extends State<Clac> {
       height: 40,
       width: 100,
       decoration: BoxDecoration(
-          color: Color(0xff54759E),
+          color: const Color(0xff54759E),
           borderRadius: BorderRadius.circular(10),
-          boxShadow: [BoxShadow(color: Colors.black38, blurRadius: 4)]),
+          boxShadow: const [BoxShadow(color: Colors.black38, blurRadius: 4)]),
       alignment: Alignment.center,
       child: Text(
         '$name',
-        style: TextStyle(fontSize: 25, color: Colors.white),
+        style: const TextStyle(fontSize: 25, color: Colors.white),
       ),
     );
   }

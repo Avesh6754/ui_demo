@@ -13,7 +13,7 @@ class _LaunchState extends State<Launch> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Launch Button',
           style: TextStyle(color: Colors.white),
         ),

@@ -51,6 +51,9 @@ class _MyappState extends State<Myapp> {
               },
               child: Container(
                 alignment: Alignment.center,
+                height: 200,
+                width: 200,
+                color: Colors.lightGreen,
                 child: const Text(
                   'oooo',
                   style: TextStyle(
@@ -58,9 +61,6 @@ class _MyappState extends State<Myapp> {
                     letterSpacing: -35,
                   ),
                 ),
-                height: 200,
-                width: 200,
-                color: Colors.lightGreen,
               ),
             ),
           ),
