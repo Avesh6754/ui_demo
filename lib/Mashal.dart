@@ -26,6 +26,7 @@ backgroundColor: Colors.white,
           },
           child: const Icon(
             Icons.arrow_back,
+
             color: Colors.white,
           ),
         ),

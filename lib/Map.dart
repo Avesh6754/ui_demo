@@ -64,6 +64,7 @@ class _MapdataState extends State<Mapdata> {
 
                     Padding(
                       padding: const EdgeInsets.only(left: 20),
+
                       child: Text("$Name",style: const TextStyle(fontSize: 25,),),
                     ),
 

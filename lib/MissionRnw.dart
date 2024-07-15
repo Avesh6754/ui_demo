@@ -18,6 +18,7 @@ class _MissionrnwState extends State<Missionrnw> {
 
         title:const Text(
           'Mission of RNW',
+
           style: TextStyle(color: Colors.white),
         ),
         elevation: 3,shadowColor: Colors.black,

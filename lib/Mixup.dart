@@ -23,6 +23,7 @@ class _MixupState extends State<Mixup> {
         centerTitle: true,
         leading: GestureDetector(
           onTap: (){
+
             Navigator.of(context).pop();
           },
           child: const Icon(

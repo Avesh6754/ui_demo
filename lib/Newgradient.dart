@@ -19,6 +19,7 @@ class _InlinegredientState extends State<Inlinegredient> {
         leading: InkWell(
           onTap: () {
             Navigator.of(context).pop();
+
           },
           child: const Icon(
             Icons.arrow_back,

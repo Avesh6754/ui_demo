@@ -40,6 +40,7 @@ class _ShadowbuttonState extends State<Shadowbutton> {
           },
           child: Container(
             height: 65,
+
             width: 220,
             decoration: BoxDecoration(
                 color: Colors.black,

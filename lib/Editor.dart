@@ -144,6 +144,7 @@ class _EditorState extends State<Editor> {
         child: Text(
           "   $Name",
           style: const TextStyle(fontSize: 25),
+
         ));
   }
 

@@ -32,6 +32,7 @@ class _DynamicDartState extends State<DynamicDart> {
           GestureDetector(
             onTap: () {
               Navigator.of(context).pushNamed('/Editor');
+
             },
             child: const Padding(
               padding: EdgeInsets.all(8.0),
