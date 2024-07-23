@@ -7,10 +7,13 @@ import 'package:ui_demo/Myapp.dart';
 import 'package:ui_demo/Newgradient.dart';
 import 'package:ui_demo/OpernDoor.dart';
 import 'package:ui_demo/Shadowbutton.dart';
+import 'package:ui_demo/bolt.dart';
 import 'package:ui_demo/chess.dart';
 import 'package:ui_demo/flage.dart';
 import 'package:ui_demo/lettercover.dart';
+import 'package:ui_demo/spliter.dart';
 import 'package:ui_demo/utils/Cube3d.dart';
+import 'package:ui_demo/wall.dart';
 import 'package:ui_demo/watch.dart';
 
 import 'Clac.dart';
@@ -35,6 +38,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      initialRoute: 'bolt',
       routes: {
         '/': (context) => Myapp(),
         '/Mission': (context) => Missionrnw(),
@@ -58,6 +62,9 @@ class MyApp extends StatelessWidget {
         '/Icon': (context) => Ioncdata(),
         '/dynamic': (context) => DynamicDart(),
         '/Editor': (context) => Editor(),
+        '/bolt': (context) => Bolt(),
+        '/wall': (context) => Wall(),
+        '/split': (context) => Splitter(),
       },
     );
   }

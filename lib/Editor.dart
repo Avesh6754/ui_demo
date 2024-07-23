@@ -35,21 +35,25 @@ class _EditorState extends State<Editor> {
       ),
       body: Column(
         children: [
-          Container(
-            margin: const EdgeInsets.fromLTRB(15, 30, 15, 0),
-            height: 350,
-            width: double.infinity,
-            decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-                boxShadow: const [
-                  BoxShadow(
-                      color: Colors.black12, spreadRadius: 2, blurRadius: 2)
-                ]),
-            child: Icon(
-              data,
-              size: 150,
-              color: colordata,
+          GestureDetector(onTap: (){
+            Navigator.of(context).pushNamed('/bolt');
+          },
+            child: Container(
+              margin: const EdgeInsets.fromLTRB(15, 30, 15, 0),
+              height: 350,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                  boxShadow: const [
+                    BoxShadow(
+                        color: Colors.black12, spreadRadius: 2, blurRadius: 2)
+                  ]),
+              child: Icon(
+                data,
+                size: 150,
+                color: colordata,
+              ),
             ),
           ),
           Select("Select Color"),
