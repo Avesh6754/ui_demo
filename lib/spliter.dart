@@ -75,6 +75,7 @@ Container RowBox(int index) {
     height: double.infinity,
     width: 90,
     alignment: Alignment.center,
+
     decoration: const BoxDecoration(color: Colors.grey),
     child: Text(
       '${index + 1}',
