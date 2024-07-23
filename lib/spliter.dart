@@ -18,7 +18,7 @@ class _SplitterState extends State<Splitter> {
         title: const Text(
           'SPLITTER',
           style: TextStyle(
-              letterSpacing: 1,
+
               fontSize: 28,
               color: Colors.white,
               fontWeight: FontWeight.w500),
@@ -64,7 +64,7 @@ Container ColumnBox(int index) {
     decoration: BoxDecoration(color: Colors.amber),
     child: Text(
       '${index + 1}',
-      style: TextStyle(fontSize: 28),
+      style: TextStyle(fontSize: 30),
     ),
   );
 }
@@ -78,7 +78,7 @@ Container RowBox(int index) {
     decoration: const BoxDecoration(color: Colors.grey),
     child: Text(
       '${index + 1}',
-      style: TextStyle(fontSize: 28),
+      style: TextStyle(fontSize: 30),
     ),
   );
 }
